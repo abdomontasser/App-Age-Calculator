@@ -1,16 +1,20 @@
+// select the inputs 
 const days = document.getElementById("Dfield");
 const month = document.getElementById("Mfield");
 const years = document.getElementById("Yfield");
 
+// select the field that will show the calculated 
 const calculatedDays = document.getElementById("Dcalculated");
 const calculatedMonth = document.getElementById("Mcalculated");
 const calculatedYear = document.getElementById("Ycalculated");
-
-
+// console.log(calculatedYear)
+// console.log(calculatedDays)
+// select the labels 
 const dayslabel=document.getElementById("Dlabel")
 const Montlabel=document.getElementById("Mlabel")
 const Yearlabel=document.getElementById("Ylabel")
 
+// get the current day and month 
 const userYear = new Date().getFullYear();
 const userMonth = new Date().getMonth() ;
 const userDay = new Date().getDate();
