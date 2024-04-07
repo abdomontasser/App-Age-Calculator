@@ -1,0 +1,149 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color:hsl(0, 1%, 44%);
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sub-main {
+    width: auto;
+    height: auto;
+    padding: 2px;
+    background-color: red;
+    border-bottom-right-radius: 20%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 10px;
+}
+
+label
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 0px 15px;
+}
+.separtor
+{
+    margin-top:10px ;
+}
+/* div img
+{
+    float: right;
+} */
+.inputs
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+}
+input
+{
+    padding:15px 0px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 8px;
+    margin-right: 20px;
+}
+.Year-field
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+.months-field
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+.days-field
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+.calculated-field
+{
+    color:hsl(259, 100%, 65%);
+    font-size: 40px;
+    margin-right: 8px;
+}
+.warning
+{
+    outline: none;
+    border: 2px solid red;
+
+}
+.warning-2
+{
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+    .sub-main {
+        width: calc(100%/2);
+        height: 70%;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Year-field,
+    .months-field,
+    .days-field {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .sub-main {
+        width: calc(100%/2);
+        height: 70%;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Year-field,
+    .months-field,
+    .days-field {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
